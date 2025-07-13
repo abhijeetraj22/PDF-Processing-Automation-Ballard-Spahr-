@@ -1,6 +1,8 @@
-# PdfExtractProject
+# 📁 PdfExtractProject
 
 A complete automation system for extracting, processing, renaming, merging, and managing accounting-related PDF files based on voucher records from SQL Server. The project includes logging, email alerts, error handling, scheduled execution, and integration with Microsoft Outlook and Credential Manager.
+
+---
 
 ## 🔧 Features
 
@@ -31,7 +33,7 @@ A complete automation system for extracting, processing, renaming, merging, and 
 ### 📅 Scheduling Support
 
 * Includes script to generate a batch file to silently run the schedule script (`pythonw.exe`)
-* Scheduled script (`3schedule.py`) can be set up in Task Scheduler for daily unattended execution
+* Scheduled script can be set up in Task Scheduler for daily unattended execution
 
 ### 📂 Logging
 
@@ -48,21 +50,20 @@ A complete automation system for extracting, processing, renaming, merging, and 
 
 ---
 
-## 🌐 Folder Structure
+## 📂 Folder Structure
 
 ```
 PdfExtractProject/
-├── copyFilesAndFolders.py            # Copy Voucher folders based on SQL PostDate
-├── mergeMoveThreePack.py            # Renames, merges PDFs, cleans up
-├── renameBasedOnDB.py               # Renames PDFs using VoucherID & VchrIndex
-├── extractTKIDandRename.py          # Extracts TKID from PDFs, renames using Timekeeper
-├── createBatch.py                   # Generates a .bat file to run scheduler silently
-├── errormessagehandler.py           # Centralized error handler + email alert logic
-├── email_outlook_com.py             # Sends email via Outlook
-├── email_smtp_creds.py              # Sends email via SMTP using Windows Credential Manager
-├── send_summary_email.py            # Reads all shared errors and sends summary on completion
-├── shared_errors.txt                # Runtime-shared error collection file
-└── README.md                        # This file
+├── checkmailcrednew3.py             # Stores email credentials securely
+├── email_sender_new.py             # Sends summary email via Outlook
+├── errormessagehandlernew2.py      # Logs & sends error mail alerts
+├── folderCopySql.py                # Copies voucher folders based on SQL PostDate
+├── newPDFrenamewithSQL22.py        # Renames PDFs using DB voucher info
+├── onlyBatchfile.py                # Generates a batch file to run scripts silently
+├── pdfMergeMoveThreePack.py        # Merges PDFs/images, applies cleanup
+├── renameFile2.py                  # Renames files using sanitized logic
+├── scheduleWithoutExeFile4.py      # Scheduler script runner (pythonw)
+├── startupShortcut22.py            # Creates desktop/startup shortcut for automation
 ```
 
 ---
@@ -75,7 +76,7 @@ PdfExtractProject/
 | PDF Libraries | PyPDF2, fitz (PyMuPDF), ReportLab |
 | DB Access     | pyodbc                            |
 | Logging       | logging module                    |
-| Email         | win32com, smtplib, MIME           |
+| Email         | win32com, smtplib, MIME, creds    |
 | Scheduling    | pythonw + batch + Task Scheduler  |
 | File Handling | shutil, os, datetime              |
 
@@ -86,9 +87,8 @@ PdfExtractProject/
 * All scripts call `log_error()` which:
 
   * Logs to file
-  * Appends error to `shared_errors.txt`
-  * Sends error email via `error_mail()`
-* `send_summary_email.py` reads `shared_errors.txt` at end of execution and sends a summary email
+  * Sends error email via `error_mail()` from `errormessagehandlernew2.py`
+* Email credentials stored securely using Windows Credential Manager (`checkmailcrednew3.py`)
 
 ---
 
@@ -110,48 +110,41 @@ PdfExtractProject/
 * SQL Server ODBC Driver 17
 * Dependencies: `pip install -r requirements.txt`
 
-  ```txt
-  pyodbc
-  PyPDF2
-  PyMuPDF
-  reportlab
-  pillow
-  pywin32
-  ```
+```txt
+pyodbc
+PyPDF2
+PyMuPDF
+reportlab
+pillow
+pywin32
+```
 
 ### Execution
 
-1. Configure database connection strings and source/destination paths in each script.
+1. Configure database strings, paths, and email addresses in scripts.
 2. Run in sequence:
 
-   ```bash
-   python copyFilesAndFolders.py
-   python mergeMoveThreePack.py
-   python renameBasedOnDB.py
-   python extractTKIDandRename.py
-   python send_summary_email.py
-   ```
-3. (Optional) Schedule using `createBatch.py` + Task Scheduler for daily automation
+```bash
+python folderCopySql.py
+python pdfMergeMoveThreePack.py
+python renameFile2.py
+python newPDFrenamewithSQL22.py
+python email_sender_new.py
+```
+
+3. (Optional) Auto-run setup:
+
+```bash
+python onlyBatchfile.py
+python scheduleWithoutExeFile4.py
+```
 
 ---
 
-## 🚀 Future Enhancements
+## 🔗 GitHub Repository
 
-* Add PDF metadata tagging (voucher info as metadata)
-* Web interface for job monitoring
-* DB audit table logging instead of just `.log` files
+> Folder: `PdfExtractProject`
 
 ---
 
-## 👉 GitHub Repo
-
-> [PdfExtractProject](https://github.com/abhijeetraj22/PDF-Processing-Automation-Ballard-Spahr-/new/main/PdfExtractProject))
-> *Clone, configure, and automate your PDF accounting workflows.*
-
----
-
-For inquiries, contributions, or deployment help, feel free to contact via
-
----
-
-> ⚡ Built by Abhijeet Raj to streamline financial document handling in enterprise environments.
+> ⚡ Built by Abhijeet Raj to streamline PDF and document automation for financial workflows.
