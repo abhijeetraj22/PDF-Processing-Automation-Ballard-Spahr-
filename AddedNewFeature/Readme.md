@@ -151,5 +151,5 @@ Stored via `win32cred` and retrieved securely. Avoids plain-text passwords in so
 ---
 
 
-> GitHub: \[(https://github.com/abhijeetraj22/PDF-Processing-Automation-Ballard-Spahr-/new/main/AddedNewFeature)]
+> GitHub Repo: [Added New Feature](https://github.com/abhijeetraj22/PDF-Processing-Automation-Ballard-Spahr-/new/main/AddedNewFeature)
 
