@@ -126,10 +126,6 @@ This project showcases:
 * Production-quality, modular and scalable approach.
 
 ---
-
 ## 🔗 GitHub Repository
 
-> [JsonDataExtractionUsingToken](https://github.com/abhijeetraj22/PDF-Processing-Automation-Ballard-Spahr-/new/main/JsonDataExtractionUsingToken)
-> *Clone and configure.*
----
-
+> Folder: `JsonDataExtractionUsingToken`
