@@ -149,7 +149,7 @@ Stored via `win32cred` and retrieved securely. Avoids plain-text passwords in so
 * Demonstrates advanced PDF handling and Windows Credential usage.
 
 ---
+## 🔗 GitHub Repository
 
-
-> GitHub Repo: [Added New Feature](https://github.com/abhijeetraj22/PDF-Processing-Automation-Ballard-Spahr-/new/main/AddedNewFeature)
+> Folder: `Added New Feature`
 
