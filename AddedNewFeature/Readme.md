@@ -1,4 +1,4 @@
-# 📁 AddedNewFeature
+# 📁 Added New Feature
 
 This folder contains advanced automation scripts for PDF processing, file management, database interaction, and secure credential storage. These scripts were developed to support high-volume accounting workflows, specifically targeting voucher image management, secure file handling, metadata extraction, and PDF enhancement operations in enterprise environments.
 
