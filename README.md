@@ -5,7 +5,7 @@
 [![PowerShell](https://img.shields.io/badge/PowerShell-Scripting-blue?logo=powershell)](https://learn.microsoft.com/powershell/)
 [![Status](https://img.shields.io/badge/Project-Production--Ready-green)]()
 [![Automation](https://img.shields.io/badge/Automation-End--to--End-orange)]()
-[![License](https://img.shields.io/badge/License-MIT-purple)](LICENSE)
+
 
 > 🎯 **Real-world enterprise automation** for PDF processing, voucher management, secure token APIs, folder cleanup, database integration, email alerting, and batch scheduling.
 > Built to support **accounting teams** with minimal manual intervention.
