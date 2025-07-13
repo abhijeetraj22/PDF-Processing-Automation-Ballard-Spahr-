@@ -145,5 +145,6 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 > 💼 Designed & developed by **Abhijeet Raj** to automate complex financial document workflows for enterprise systems.
 
 ---
+## Connect with me! 🌐
 
-Would you like this `README.md` provided as a downloadable file or directly inserted into your GitHub repo as Markdown?
+[<img target="_blank" src="https://img.icons8.com/bubbles/100/000000/linkedin.png" title="LinkedIn">](https://www.linkedin.com/in/rajabhijeet22/)       [<img target="_blank" src="https://img.icons8.com/bubbles/100/000000/github.png" title="Github">](https://github.com/abhijeetraj22)     [<img target="_blank" src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" title="Instagram">](https://www.instagram.com/abhijeet_raj_/?hl=en) [<img target="_blank" src="https://img.icons8.com/bubbles/100/000000/twitter-circled.png" title="Twitter">](https://twitter.com/abhijeet_raj_/)
