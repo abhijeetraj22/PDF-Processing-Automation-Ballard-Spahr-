@@ -130,11 +130,15 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 ## 📌 What Makes This Project Unique
 
-✔️ **Enterprise-grade** document processing pipeline
-✔️ Fully **modular and scalable**
-✔️ Uses **secure credential storage** (no hardcoded passwords)
-✔️ Demonstrates skills in **OCR, SQL, APIs, PowerShell, and Windows automation**
-✔️ Designed for **real production use** in high-volume accounting scenarios
+✔ **Enterprise-grade** document processing pipeline
+
+✔ Fully **modular and scalable**
+
+✔ Uses **secure credential storage** (no hardcoded passwords)
+
+✔ Demonstrates skills in **OCR, SQL, APIs, PowerShell, and Windows automation**
+
+✔ Designed for **real production use** in high-volume accounting scenarios
 
 ---
 
